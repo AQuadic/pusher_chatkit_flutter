@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pusher_chatkit_flutter/pusher_chatkit_flutter.dart';
 
 void main() => runApp(MyApp());
 
@@ -20,7 +21,11 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   String text1 = "Hi, This is Text1";
   String text2 = "Hello From Text2";
+
   floatingButtonOnPressed() {
+    var client = PusherChatKit.init("//Should Be An Code//");
+    client.createUserWithEmail(
+        email: "Tiny@Flutter.com", name: "TinyProgrammer", username: "Tiny");
     setState(() {
       text1 = "Welcome Magic";
       text2 = "Welcome Tiny Programmers";
