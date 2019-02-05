@@ -1,5 +1,5 @@
-name: pusher_chatkit_flutter
-description: A new Flutter package project.
+name: chatkit_example
+description: Just An Example to Test the functions of Pusher_ChatKit_Flutter Package
 version: 0.0.1
 author: TinyProgrammers Organaization
 homepage: http://TinyProgrammers.ga
@@ -10,10 +10,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  http: ^0.12.0+1
+  cupertino_icons: ^0.1.2
+  pusher_chatkit_flutter:
+    path: ../
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
 flutter:
+  uses-material-design: true
